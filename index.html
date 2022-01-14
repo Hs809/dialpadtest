@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="inputWrapper">
+        <input type="text" id="inputvalues" readonly />
+      </div>
+      <div class="secondary">
+        <div class="firstLine">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value)"
+            value="1"
+          />
+          <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value)"
+            value="2"
+            />
+            <span>ABC</span>
+          </div>
+          <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value)"
+            value="3"
+          />
+          <span>DEF</span>
+          </div>
+        </div>
+        <div class="secondLine">
+            <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="4"
+          />
+          <span>GHI</span>
+          </div>
+          <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="5"
+          />
+          <span>JKL</span>
+          </div>
+          <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="6"
+          />
+          <span>MNO</span>
+          </div>
+        </div>
+        <div class="thirdLine">
+            <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="7"
+          />
+          <span>PQRS</span>
+          </div>
+          <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="8"
+          />
+          <span>TUV</span>
+          </div>
+          <div class="digit">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="9"
+          />
+          <span>WXYZ</span>
+          </div>
+        </div>
+        <div class="fourthLine">
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="*"
+          />
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="0"
+          />
+          <input
+            id="add"
+            type="button"
+            onclick="dialAdd(this.value);"
+            value="#"
+          />
+        </div>
+        <div class="fifthLine">
+          <div>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADpElEQVRoge2ZW4hNURjHf8d9TMjkkuMyk4YHEXK/lDc05UHuiUQ88MKDPE1JKS+UJ3lwDYknmbzwJENIaBKRuzHu5D4uczx8a9vfXmef2mftvc+hzq9W+7LW/L/vm73W+tZaBypU+G/JmpIqndI2AGwA1pfATqpUAa+Bt0DPMvsSi7VAzpS1ZfbFmQxwCz+QO5SmKydOA34QXmkoq0eOnCM/kLNl9ciBMUAH+YHkgHFl9KtoDuI7fgFoVs8Hy+hXUWSBdnzHFwAL1fMPYEjZvCuC7fhOPwS6AJ2B++r99rJ5F5GewBt8hzequk3q/TuguuTeFcF6fGc/An1UXS/gg6r/Z5ctGeA2vqM7Q9rsUvV3+UcTpB7Qv4C6kDZ1ps5rtygp45kIbboB/YBByIykr8PN/VCk63icBBYX0DuJBO3RjoyZ50CbuT5Q923AI+BL1EAGAGuAwcAwc80CA4kWsGYGcLFA3XQkrxRDDniJBNYKPDHX/eZ9HhuB34Rn5CjlG9AUwbEm09bVzm9kFvxL2H96PnAU2Uto3hP83GFd4QWyNIlKFcEuGtZ9a5E85NEOrAKORzEwi+BUmQN2FOFgUmyxfPgEzC5WZDTw1BI6gGTqtOkM7LFstwHjXQXrkA2RFjxFfrdLku7ACcvmfaA+rnANMgNp4UvIlJw0fYHzlq2ryIyaCNXAGcvALWSaTooscMOycQ7onaANQMbGPstQKzA2Ae1RwGNL+wjQNQHtUDLIGkobfIskQFdmIJlda+6k+CTsxGaCW9mWGFotSqfDaJeUY8qBwzF0DimdY64icZbRI9X95Rg6V9T9iBg6TvQguC+fGENrktL5Qbo5Ko9pyvh3JIm50hX4qvSmuoi4dq1J6v468nXCyAArTCk0C/0EbqrnyS4OuQYyRd0XGh8TkCx92JTLyF4kDD1OnAJx5R5+V1hm1WWBvYTvazqQdVSt9TfLVZu7qXltUUMwh3iLuSqgEfhMvvP28eln09Yb2PVW+5oSxMFcZfQN0vfnIYdx9he4BsxExpS98MwBz4CVSBfX52FzShFII8FuEObgC2T/r8dgJ2C1qbPbNxst77mxBHHQFOKIzgO7CR7M2VQDW5Fpu5DO6ZR8D/CygPGzyCo2KvXkb6C88ipBf0OpCzF6Gxk3rswleELplbADvsRYqgy9Rw4H4mR1jy7AOuQXYE9/SQK6BdmFHHnuAfqnoN/faP8ytlJjG/KzWtqMMbYqVKiQEH8AzyR0TgM04oUAAAAASUVORK5CYII="
+            />
+          </div>
+          <div>
+            <img
+              id="call"
+              class="callNumber"
+              src="https://img.icons8.com/ios/50/000000/phone-disconnected.png"
+            />
+          </div>
+          <div>
+            <img
+              id="delete"
+              onclick="deleteInput();"
+              src="https://img.icons8.com/ios-glyphs/30/000000/long-arrow-left.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

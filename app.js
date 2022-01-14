@@ -1,12 +1,11 @@
-function myFunction() {
-    document.getElementById("inputvalues").innerHTML = "Hello World";
-} 
+// Function to add values in the input element and if the letter exceded 
+const values = document.getElementById('inputvalues');
 function dialAdd(val){
-    if(document.getElementById('inputvalues').value.length < 10){
-        document.getElementById('inputvalues').value = document.getElementById('inputvalues').value + val;  
+    if(values.value.length < 10){
+        values.value = values.value + val;  
     }
 }
+
 function deleteInput(){
-    console.log(document.getElementById('inputvalues').value.length);
-    document.getElementById('inputvalues').value = document.getElementById('inputvalues').value.substring(0, document.getElementById('inputvalues').value.length - 1);
+    values.value = values.value.substring(0, values.value.length - 1);
 }
